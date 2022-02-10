@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="./assets/odin-lined.png" alt="">
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <p>This is not a real online service! You know you need something like this in your life 
+                to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="form-container">
+                <p>Let's do this!</p>
+                <form  id="form">
+                    <div>
+                        <div class="input-element">
+                            <label for="">FIRST NAME</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-element">
+                            <label for="">LAST NAME</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-element">
+                            <label for="">EMAIL</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="input-element">
+                            <label for="">PHONE NUMBER</label>
+                            <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-element">
+                            <label for="">PASSWORD</label>
+                            <input id="password" minlength="6" type="password" required>
+                            <span id="error"></span>
+                        </div>
+                        <div class="input-element">
+                            <label for="">CONFIRM PASSWORD</label>
+                            <input id="confirm_password" type="password" required>
+                        </div>
+                    </div>
+                    <button>Create account</button>
+                </form>
+                <span>Already have an account? <a href="">Log in</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
